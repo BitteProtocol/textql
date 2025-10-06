@@ -1,0 +1,38 @@
+{
+  "name": "textql",
+  "version": "1.0.0",
+  "description": "TextQL Playbooks API client and CLI tool",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "textql": "./index.ts"
+  },
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun run --watch index.ts",
+    "example:basic": "bun run examples/basic-usage.ts",
+    "example:advanced": "bun run examples/advanced-usage.ts",
+    "build": "bun build index.ts --outdir dist --target bun",
+    "test": "bun test"
+  },
+  "keywords": [
+    "textql",
+    "playbooks",
+    "sql",
+    "automation",
+    "api",
+    "cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
