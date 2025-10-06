@@ -26,7 +26,7 @@ export class TextQLClient {
     try {
       const url = `${this.baseUrl}${endpoint}`;
       const headers: Record<string, string> = {
-        'Authorization': `${this.config.apiKey}`,
+        'Authorization': `ApiKey ${this.config.apiKey}`,
         'Content-Type': 'application/json',
       };
 
